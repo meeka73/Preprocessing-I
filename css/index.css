@@ -1,1 +1,281 @@
-/* Compile your LESS file! */
+.layout-padding {
+  padding: 1% 0 2%;
+}
+.text-padding {
+  padding: 2%;
+}
+.layout {
+  width: 70%;
+  margin: 0 auto;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.title-section {
+  background-color: #EDF7FA;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+  color: #FFB677;
+}
+h2 {
+  font-size: 3rem;
+  color: #5F6CAF;
+}
+h3 {
+  font-size: 2rem;
+  color: #FF8364;
+}
+p {
+  font-size: 1.6rem;
+}
+body {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body {
+    max-width: 100%;
+  }
+}
+body .intro .navigation {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  padding: 1% 0 2%;
+}
+@media (max-width: 500px) {
+  body .intro .navigation {
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+body .intro .navigation nav {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  body .intro .navigation nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+body .intro .navigation nav a {
+  padding: 2%;
+  text-decoration: none;
+}
+body .intro .title-section {
+  height: 580px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  body .intro .title-section {
+    height: 450px;
+    width: 80%;
+    border: solid;
+  }
+}
+body .intro .title-section img {
+  height: 60%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  body .intro .title-section img {
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+body .intro .title-section .text-content h1,
+body .intro .title-section .text-content h2,
+body .intro .title-section .text-content h3,
+body .intro .title-section .text-content button {
+  padding: 1%;
+}
+body .intro .title-section .text-content button {
+  border-radius: 10%;
+  width: 15%;
+  background-color: gray;
+}
+body .skills {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0 2%;
+}
+body .skills .main-content {
+  display: flex;
+}
+body .skills .main-content .text-content {
+  width: 48%;
+  margin-right: 5%;
+}
+body .work-history {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+body .work-history .text-content h2 {
+  padding: 1% 0 2%;
+}
+body .work-history .text-content p {
+  padding: 1% 0;
+}
+body .work-history .text-content li {
+  font-size: 1.6rem;
+  padding: 1%;
+}
+body .contact {
+  width: 70%;
+  margin: 0 auto;
+}
+body .contact .text-content h2 {
+  padding: 1% 0;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+  font-size: 1.4rem;
+}

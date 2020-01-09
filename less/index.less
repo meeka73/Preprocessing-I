@@ -1,3 +1,23 @@
+//Variables
+@header-text: #FFB677;
+@background-color: #EDF7FA;
+@subheader-text: #5F6CAF;
+@text-color: #FF8364;
+
+//Mixins
+.layout-padding {
+	padding: 1% 0 2%;
+}
+
+.text-padding {
+	padding: 2%;
+}
+
+.layout {
+	width: 70%;
+	margin: 0 auto;
+}
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -57,3 +77,172 @@ html, body {
     height: 100%;
 }
 
+.title-section {
+	background-color: @background-color;
+} 
+
+html {
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 4rem;
+	color: @header-text;
+}
+
+h2 {
+	font-size: 3rem;
+	color: @subheader-text
+}
+
+h3 {
+	font-size: 2rem;
+	color: @text-color
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+body {
+
+	max-width: 90%;
+	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		max-width: 100%;
+	}
+
+	//Intro Section
+	.intro {
+
+		//navigation
+		.navigation {
+			display: flex;
+			justify-content: flex-end;
+			font-size: 2rem;
+			.layout-padding();
+
+			@media (max-width: 500px) {
+				width: 80%;
+				justify-content: center;
+				margin: 0 auto;
+			}
+
+			nav {
+				width: 40%;
+
+				@media (max-width: 500px) {
+					width: 100%;
+					text-align: center;
+				}
+				
+				a {
+					.text-padding();
+					text-decoration: none;
+				}
+			}
+		}
+
+		//title-section
+		.title-section {
+			height: 580px;
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			.layout();
+			.text-padding();
+
+			@media (max-width: 500px) {
+				height: 450px;
+				width: 80%;
+				border: solid;
+			}
+
+			img {
+				height: 60%;
+				width: 40%;
+
+				@media (max-width: 500px) {
+					height: 40%;
+					display: flex;
+					margin: 0 auto;
+				}
+			}
+
+			//text-content
+			.text-content {
+				
+				h1, h2, h3, button {
+					padding: 1%;
+				}
+
+				button {
+					border-radius: 10%;
+					width: 15%;
+					background-color: gray;
+				}
+
+			}
+	}
+
+	//Skills Section
+	.skills {
+		display: flex;
+		.layout();
+		.layout-padding();
+
+		.main-content {
+			display: flex;
+
+			.text-content {
+				width: 48%;
+				margin-right: 5%;
+			}
+		}
+		
+	}
+
+	//Work History
+	.work-history {
+		.layout();
+		padding-bottom: 2%;
+
+		.text-content {
+
+			h2 {
+				.layout-padding();
+			}
+
+			p {
+				padding: 1% 0;
+			}
+
+			li {
+				font-size: 1.6rem;
+				padding: 1%;
+			}
+
+		}
+	}
+
+	//Contact Section
+	.contact {
+		.layout();
+
+		.text-content {
+
+				h2 {
+					padding: 1% 0;
+				}
+			}
+	}
+
+	//Footer
+	footer {
+		display: flex;
+		justify-content: center;
+		padding: 4%;
+		font-size: 1.4rem;
+	}
+}
