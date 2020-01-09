@@ -1,3 +1,23 @@
+//Variables
+@header-text: #FFB677;
+@background-color: #EDF7FA;
+@subheader-text: #5F6CAF;
+@text-color: #FF8364;
+
+//Mixins
+.layout-padding {
+	padding: 1% 0 2%;
+}
+
+.text-padding {
+	padding: 2%;
+}
+
+.layout {
+	width: 70%;
+	margin: 0 auto;
+}
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -58,7 +78,7 @@ html, body {
 }
 
 .title-section {
-	background-color: lightblue;
+	background-color: @background-color;
 } 
 
 html {
@@ -67,14 +87,17 @@ html {
 
 h1 {
 	font-size: 4rem;
+	color: @header-text;
 }
 
 h2 {
 	font-size: 3rem;
+	color: @subheader-text
 }
 
 h3 {
 	font-size: 2rem;
+	color: @text-color
 }
 
 p {
@@ -94,13 +117,13 @@ body {
 			display: flex;
 			justify-content: flex-end;
 			font-size: 2rem;
-			padding: 1% 0 2%;
+			.layout-padding();
 
 			nav {
 				width: 40%;
 				
 				a {
-					padding: 2%;
+					.text-padding();
 					text-decoration: none;
 				}
 			}
@@ -109,12 +132,11 @@ body {
 		//title-section
 		.title-section {
 			height: 580px;
-			width: 70%;
 			display: flex;
 			justify-content: flex-start;
 			flex-direction: column;
-			margin: 0 auto;
-			padding: 2%;
+			.layout();
+			.text-padding();
 
 			img {
 				height: 60%;
@@ -142,9 +164,8 @@ body {
 	//Skills Section
 	.skills {
 		display: flex;
-		width: 70%;
-		margin: 0 auto;
-		padding: 1% 0 2%;
+		.layout();
+		.layout-padding();
 
 		.main-content {
 			display: flex;
@@ -158,14 +179,13 @@ body {
 
 	//Work History
 	.work-history {
-		width: 70%;
-		margin: 0 auto;
+		.layout();
 		padding-bottom: 2%;
 
 		.text-content {
 
 			h2 {
-				padding: 1% 0 2%;
+				.layout-padding();
 			}
 
 			p {
@@ -182,8 +202,7 @@ body {
 
 	//Contact Section
 	.contact {
-		width: 70%;
-		margin: 0 auto;
+		.layout();
 
 		.text-content {
 
