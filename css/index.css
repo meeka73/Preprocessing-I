@@ -195,11 +195,42 @@ body .intro .title-section .text-content button {
 }
 body .skills {
   display: flex;
+  width: 70%;
   margin: 0 auto;
-  flex-direction: row;
-  border: solid blue;
+  padding: 1% 0 2%;
 }
-body .skills .text-content {
-  width: 40%;
-  border: solid;
+body .skills .main-content {
+  display: flex;
+}
+body .skills .main-content .text-content {
+  width: 48%;
+  margin-right: 5%;
+}
+body .work-history {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+body .work-history .text-content h2 {
+  padding: 1% 0 2%;
+}
+body .work-history .text-content p {
+  padding: 1% 0;
+}
+body .work-history .text-content li {
+  font-size: 1.6rem;
+  padding: 1%;
+}
+body .contact {
+  width: 70%;
+  margin: 0 auto;
+}
+body .contact .text-content h2 {
+  padding: 1% 0;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+  font-size: 1.4rem;
 }
