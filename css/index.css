@@ -134,6 +134,72 @@ html,
 body {
   height: 100%;
 }
-.intro {
+.title-section {
   background-color: lightblue;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+body {
+  max-width: 90%;
+  margin: 0 auto;
+}
+body .intro .navigation {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  padding: 1% 0 2%;
+}
+body .intro .navigation nav {
+  width: 40%;
+}
+body .intro .navigation nav a {
+  padding: 2%;
+  text-decoration: none;
+}
+body .intro .title-section {
+  height: 580px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2%;
+}
+body .intro .title-section img {
+  height: 60%;
+  width: 40%;
+}
+body .intro .title-section .text-content h1,
+body .intro .title-section .text-content h2,
+body .intro .title-section .text-content h3,
+body .intro .title-section .text-content button {
+  padding: 1%;
+}
+body .intro .title-section .text-content button {
+  border-radius: 10%;
+  width: 15%;
+  background-color: gray;
+}
+body .skills {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  border: solid blue;
+}
+body .skills .text-content {
+  width: 40%;
+  border: solid;
 }
