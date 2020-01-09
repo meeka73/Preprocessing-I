@@ -109,6 +109,10 @@ body {
 	max-width: 90%;
 	margin: 0 auto;
 
+	@media (max-width: 500px) {
+		max-width: 100%;
+	}
+
 	//Intro Section
 	.intro {
 
@@ -119,8 +123,19 @@ body {
 			font-size: 2rem;
 			.layout-padding();
 
+			@media (max-width: 500px) {
+				width: 80%;
+				justify-content: center;
+				margin: 0 auto;
+			}
+
 			nav {
 				width: 40%;
+
+				@media (max-width: 500px) {
+					width: 100%;
+					text-align: center;
+				}
 				
 				a {
 					.text-padding();
@@ -138,9 +153,21 @@ body {
 			.layout();
 			.text-padding();
 
+			@media (max-width: 500px) {
+				height: 450px;
+				width: 80%;
+				border: solid;
+			}
+
 			img {
 				height: 60%;
 				width: 40%;
+
+				@media (max-width: 500px) {
+					height: 40%;
+					display: flex;
+					margin: 0 auto;
+				}
 			}
 
 			//text-content
@@ -157,8 +184,6 @@ body {
 				}
 
 			}
-
-		}
 	}
 
 	//Skills Section
@@ -175,6 +200,7 @@ body {
 				margin-right: 5%;
 			}
 		}
+		
 	}
 
 	//Work History
